@@ -2,6 +2,8 @@
  * Created by lenovo on 2018/1/19.
  */
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/app/index.js',
@@ -9,6 +11,12 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  plugins: [
+    new CleanWebpackPlugin(['dist']),
+    new HtmlWebpackPlugin({
+      title: 'My first three.js app'
+    })
+  ],
   module: {
     rules:[
       {

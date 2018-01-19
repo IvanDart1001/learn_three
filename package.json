@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "build": "npx webpack --config webpack.config.js",
+    "build": "npx webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,9 +22,11 @@
   },
   "homepage": "https://github.com/IvanDart1001/learn_three#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^0.28.9",
     "csv-loader": "^2.1.1",
     "file-loader": "^1.1.6",
+    "html-webpack-plugin": "^2.30.1",
     "style-loader": "^0.19.1",
     "webpack": "^3.10.0",
     "xml-loader": "^1.2.1"

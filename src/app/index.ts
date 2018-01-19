@@ -1,7 +1,7 @@
 /**
  * Created by lenovo on 2018/1/19.
  */
-import * as THREE from 'three/build/three.js'
+import * as THREE from 'three'
 
 /**
  * init scene

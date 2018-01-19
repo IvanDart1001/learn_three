@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/IvanDart1001/learn_three#readme",
   "devDependencies": {
+    "@types/three": "^0.89.3",
     "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^0.28.9",
     "csv-loader": "^2.1.1",
@@ -32,6 +33,8 @@
     "file-loader": "^1.1.6",
     "html-webpack-plugin": "^2.30.1",
     "style-loader": "^0.19.1",
+    "ts-loader": "^3.2.0",
+    "typescript": "^2.6.2",
     "webpack": "^3.10.0",
     "webpack-dev-middleware": "^2.0.4",
     "webpack-dev-server": "^2.11.0",

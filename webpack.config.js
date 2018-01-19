@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: './src/app/index.js',
+  entry: './src/app/index.ts',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -18,13 +18,18 @@ module.exports = {
       title: 'My first three.js app'
     })
   ],
-  devtool: 'inline-source-map',
+  devtool: 'source-map',
   devServer:{
     contentBase: './dist',
     port: 7777
   },
   module: {
     rules:[
+      {
+        test: /\.tsx?$/,
+        loader: 'ts-loader',
+        exclude: /node_modules/,
+      },
       {
         test:/\.css$/,
         use:[
@@ -57,5 +62,8 @@ module.exports = {
         ]
       }
     ]
+  },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"]
   }
 };

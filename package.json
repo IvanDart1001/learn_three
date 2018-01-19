@@ -1,0 +1,30 @@
+{
+  "name": "learn_three",
+  "version": "1.0.0",
+  "description": "learning three.js",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build":"npx webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanDart1001/learn_three.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvanDart1001/learn_three/issues"
+  },
+  "homepage": "https://github.com/IvanDart1001/learn_three#readme",
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "three": "^0.89.0"
+  }
+}

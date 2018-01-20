@@ -13,7 +13,8 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       title: 'My first three.js app'
-    })
+    }),
+    new webpack.HashedModuleIdsPlugin()
   ],
   output: {
     filename: '[name].bundle.js',

@@ -1,16 +1,13 @@
 /**
- * Created by lenovo on 2018/1/19.
+ * Created by lenovo on 2018/1/20.
  */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: './src/app/index.ts',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/'
+  entry: {
+    app: './src/app/index.ts'
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
@@ -18,17 +15,17 @@ module.exports = {
       title: 'My first three.js app'
     })
   ],
-  devtool: 'source-map',
-  devServer:{
-    contentBase: './dist',
-    port: 7777
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/'
   },
   module: {
     rules:[
       {
         test: /\.tsx?$/,
         loader: 'ts-loader',
-        exclude: /node_modules/,
+        exclude: /node_modules/
       },
       {
         test:/\.css$/,

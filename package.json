@@ -1,7 +1,7 @@
 {
-  "name": "learn_three",
+  "name": "simple-threejs-boilerplate",
   "version": "1.0.0",
-  "description": "learning three.js",
+  "description": "learning and developing three.js with a kick start~",
   "main": "index.js",
   "directories": {
     "lib": "lib"
